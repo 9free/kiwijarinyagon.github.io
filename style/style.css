@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;  /* Clean font */
+    font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;  /* Light background */
@@ -26,9 +26,15 @@ nav a {
     text-decoration: none;  /* No underlines */
 }
 
-main {
+main h1{
     padding: 20px;
     text-align: center;
+}
+
+main p {
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.6;  /* Better readability */
 }
 
 img {
