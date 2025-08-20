@@ -2,47 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Makes it mobile-friendly -->
-    <title>Exhibition of Jarinyagon by kiwijarinyagon</title>  <!-- Page title, shows in browser tab -->
-    <link rel="stylesheet" href="style/style.css">  <!-- Links to your CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Exhibition of Jarinyagon by kiwijarinyagon</title>
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>  <!-- Navigation menu -->
-                <li><a class = "hover_underline" href="index.html">Home</a></li>
-                <li><a class = "hover_underline" href="about.html">About</a></li>
-                <li><a class = "hover_underline" href="academics.html">Academics</a></li>
-                <li><a class = "hover_underline" href="leisure.html">Leisure</a></li>
-                <li><a class = "hover_underline" href="contact.html">Contact</a></li>
+            <ul>
+                <li><a class="hover_underline" href="index.html">Home</a></li>
+                <li><a class="hover_underline" href="about.html">About</a></li>
+                <li><a class="hover_underline" href="academics.html">Academics</a></li>
+                <li><a class="hover_underline" href="leisure.html">Leisure</a></li>
+                <li><a class="hover_underline" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <!-- Page-specific content goes here -->
-        <h1>Contact Me</h1>
-        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
-        
-        <form action="submit_form.php" method="post">  <!-- Example form action -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send Message</button>
-        </form>
+        <h1 class="contact-header">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-image">
+                <img src="../images/DSCF1255.JPG" alt="Profile Image">
+            </div>
+            <div class="contact-content">
+                <h2>Where you can reach me</h2>
+                <ul class="contact-list">
+                    <li>
+                        <img src="https://img.icons8.com/ios-filled/24/5C5049/email.png" alt="Email Icon" class="contact-icon">
+                        <a href="mailto:kiwi.jarinyagon@gmail.com">Email</a>
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/ios-filled/24/5C5049/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                        <a href="https://www.linkedin.com/in/kiwi-jarinyagon/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/ios-filled/24/5C5049/youtube.png" alt="YouTube Icon" class="contact-icon">
+                        <a href="https://www.youtube.com/@audrey_allday1621" target="_blank">Youtube</a>
+                    </li>
+                </ul>
+                <h2>Any message? Leave it here!</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
     </main>
     
     <footer>
         <p>&copy; 2025 Jarinyagon CHANTAWANNAKUL. All rights reserved.</p>
     </footer>
     
-    <script src="javascript/script.js"></script>  <!-- Links to your JS -->
+    <script src="javascript/script.js"></script>
 </body>
 </html>
