@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Makes it mobile-friendly -->
-    <title>about Jarinyagon</title>  <!-- Page title, shows in browser tab -->
+    <title>kiwijarinyagon in freetime</title>  <!-- Page title, shows in browser tab -->
     <link rel="stylesheet" href="style/style.css">  <!-- Links to your CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -21,16 +21,16 @@
     </header>
     
     <main>
-        <h1 class="academic-header">POV I am on a Day-off</h1>
+        <h1 class="leisure-header">POV I am on a Day-off</h1>
         
-        <section class="academic-section">
+        <section class="leisure-section-1">
             <h2>Pencil Drawing</h2>
             <p>
                 This section is to be the gallery for my pencil drawings.
                 I am exploring and learning to draw reflective surfaces, shades and textures, and human anatomy.
             </p>
             <div class="slider-container">
-                <button class="slider-arrow left-arrow" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-arrow left-arrow">&#10094;</button>
                 <div class="slider">
                     <a href="project1.html" class="slide">
                         <img src="../images/zz.png" alt="Project 1">
@@ -45,23 +45,25 @@
                         <div class="slide-title">Textiles</div>
                     </a>
                 </div>
-                <button class="slider-arrow right-arrow" onclick="moveSlide(1)">&#10095;</button>
+                <button class="slider-arrow right-arrow">&#10095;</button>
             </div>
             <a href="projects.html" class="more-link">Click for more</a>
         </section>
         
-        <section class="academic-section">
+        <section class="leisure-section-2">
             <h2>3D Design</h2>
             <p>
                 New hobby arises! I am learning to use Blender to create 3D models and scenes.
                 This section is to be the gallery for my 3D designs.
             </p>
             <div class="slider-container">
-                <button class="slider-arrow left-arrow" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-arrow left-arrow">&#10094;</button>
                 <div class="slider">
                     <a href="project1.html" class="slide">
                         <img src="../images/project1.jpg" alt="Project 1">
-                        <div class="slide-title">Simple donut</div>
+                        <div class="slide-content">
+                            <div class="slide-title">Simple donut</div>
+                        </div>
                     </a>
                     <a href="project2.html" class="slide">
                         <img src="../images/project2.jpg" alt="Project 2">
@@ -72,7 +74,7 @@
                         <div class="slide-title">B</div>
                     </a>
                 </div>
-                <button class="slider-arrow right-arrow" onclick="moveSlide(1)">&#10095;</button>
+                <button class="slider-arrow right-arrow">&#10095;</button>
             </div>
             <a href="achievements.html" class="more-link">Click for more</a>
         </section>
@@ -83,5 +85,9 @@
     </footer>
     
     <script src="javascript/script.js"></script>  <!-- Links to your JS -->
+    <script>
+        initSlider('.leisure-section-1 .slider-container');
+        initSlider('.leisure-section-2 .slider-container');
+    </script>
 </body>
 </html>
